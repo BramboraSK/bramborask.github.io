@@ -20,10 +20,10 @@ function retheme() {
     var cc = document.body.className;
     if (cc.indexOf("darktheme") > -1) {
         document.body.className = cc.replace("darktheme", "");
-        document.getElementById("dlbtn").src = "/static/images/sun.png"
+        document.getElementById("dlbtn").src = "./sun.png"
     } else {
         document.body.className += " darktheme";
-        document.getElementById("dlbtn").src = "/static/images/moon.png"
+        document.getElementById("dlbtn").src = "./moon.png"
     }
 }
 
