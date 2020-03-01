@@ -1,0 +1,163 @@
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.font-lg {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h2, h3, h4, button, a, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.brm-margin {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.brm-card {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    cursor:default;
+    white-space:nowrap
+}
+
+ul {
+    background-color:whitesmoke;
+}
+
+body.darktheme {
+    background-color:#191919;
+}
+
+body.darktheme h2, body.darktheme h3, body.darktheme p, body.darktheme li {
+    color:white;
+}
+
+body.darktheme ul {
+    background-color:#323232;
+}
+
+.drptxt {
+    color:#f9f9f9;
+}
+
+body.darktheme .dropdown-content {
+    background-color:#f9f9f9;
+}
+
+body.darktheme .drptxt {
+    color:black;
+}
+
+body.darktheme .userbtn {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top:15px;
+    margin-right:16px;
+}
+
+.dropdown-content {
+    right: 0;
+    position: absolute;
+    background-color: #191919;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:3px;
+    right:0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.boky {
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.vrch {
+    margin-top:5px;
+}
+
+.vrch-big {
+    margin-top:10px;
+}
+
+.spod {
+    margin-bottom:5px;
+}
+
+.spod-big {
+    margin-bottom: 10px;
+}
+
+.zmensit {
+    width: 88%;
+    height: 88%;
+}
+
+.stred {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.bltext {
+    display: inline;
+}
+
+.blbutton:hover .bltext {
+    display: none;
+}
+
+.bltime {
+    display: none;
+}
+
+.blbutton:hover .bltime {
+    display: inline;
+}
+
+.blhtext {
+    display: inline;
+}
+
+.blhbutton:hover .blhtext {
+    display: none;
+}
+
+.blhtime {
+    display: none;
+}
+
+.blhbutton:hover .blhtime {
+    display: inline;
+}
