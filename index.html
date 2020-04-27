@@ -16,10 +16,10 @@
     <script type="text/javascript">
       function load() {
         var commands = {
-          commands: ["8ball", "ban", "calculate", "chests", "coinflip", "color", "daily", "hack", "help", "hentai", "hourly", "kick", "leaderboard", "level", "love", "money", "remove", "rng", "rob", "roulette", "rps", "say", "send", "server"],
-          parameters: ["<question>", "<@User> [reason]", "<problem>", "[list/open/help]", "<botatoes> <heads/tails>", "<color>", "", "<@User>", "", "[tags]", "", "<@User> [reason]", "[amount_of_users]", "[on/off/default/disable/disabled/enable]", "<name1/thing> and <name2/thing>", "[@User]", "<amount_of_messages>", "[min] [max]", "<@User>", "<botatoes> <red/black/green>", "", "<message>", "<botatoes> <@User>", ""],
-          aliases: ["-", "-", "calculator", "chest crate box", "coin", "accountcolor", "-", "-", "info", "-", "-", "-", "lb", "xp", "-", "botatoes cash $ €", "delete clear", "number randomnumber", "-", "-", "rockpaperscissors", "-", "-", "guild"],
-          permission: ["-", "BAN_MEMBERS", "-", "-", "-", "-", "-", "-", "-", "-", "-", "KICK_MEMBERS", "-", "-", "-", "-", "MANAGE_MESSAGES", "-", "-", "-", "-", "-", "-", "-"],
+          commands: ["8ball", "ban", "calculate", "chests", "coinflip", "color", "daily", "hack", "help", "hentai", "hourly", "kick", "leaderboard", "love", "money", "remove", "rng", "rob", "roulette", "rps", "say", "send", "server"],
+          parameters: ["<question>", "<@User> [reason]", "<problem>", "[list/open/help]", "<botatoes> <heads/tails>", "<color>", "", "<@User>", "", "[tags]", "", "<@User> [reason]", "[amount_of_users]", "<name1/thing> and <name2/thing>", "[@User]", "<amount_of_messages>", "[min] [max]", "<@User>", "<botatoes> <red/black/green>", "", "<message>", "<botatoes> <@User>", ""],
+          aliases: ["-", "-", "calculator", "chest crate box", "coin", "accountcolor", "-", "-", "info", "-", "-", "-", "lb", "-", "botatoes cash $ €", "delete clear", "number randomnumber", "-", "-", "rockpaperscissors", "-", "-", "guild"],
+          permission: ["-", "BAN_MEMBERS", "-", "-", "-", "-", "-", "-", "-", "-", "-", "KICK_MEMBERS", "-", "-", "-", "MANAGE_MESSAGES", "-", "-", "-", "-", "-", "-", "-"],
           use: [""]
         };
 
@@ -53,13 +53,17 @@
     </div>
 
     <div class="brm-margin w3-display-container" style="margin-top:30px;margin-bottom:10px;" onclick="closecontent()">
+	  <h2>This BOT is verified!</h2>
+	  <image src="./verified.png"/>
       <h2><b>Help</b></h2>
       <p>If you're confused from commands or you just need some help, ask about it on our Discord server!</p>
       <h3><b>Explanations</b></h3>
       <p>&lttext&gt = Mandatory</p>
       <p>[text] = Optional</p>
       <p>Don't write these characters while using commands!</p>
-      <p>Economy account will be created after one message!</p>
+      <p>Economy account will be created after one economy related command!</p>
+	  <h3><b>Creator</b></h3>
+	  <p>BramboraSK#5968</p>
       <h3><b>Prefix</b></h3>
       <p>At the moment, we use <b>b!</b> as a prefix.</p>
       <input type="text" id="commandSearch" class="w3-input w3-border w3-round-xlarge" style="width:15%" onkeyup="search();" placeholder="Find...">
