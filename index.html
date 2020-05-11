@@ -13,28 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript">
-      function load() {
-        var commands = {
-          commands: ["8ball", "ban", "calculate", "chests", "coinflip", "color", "daily", "hack", "help", "hentai", "hourly", "kick", "leaderboard", "love", "money", "remove", "rng", "rob", "roulette", "rps", "say", "send", "server"],
-          parameters: ["<question>", "<@User> [reason]", "<problem>", "[list/open/help]", "<botatoes> <heads/tails>", "<color>", "", "<@User>", "", "[tags]", "", "<@User> [reason]", "[amount_of_users]", "<name1/thing> and <name2/thing>", "[@User]", "<amount_of_messages>", "[min] [max]", "<@User>", "<botatoes> <red/black/green>", "", "<message>", "<botatoes> <@User>", ""],
-          aliases: ["-", "-", "calculator", "chest crate box", "coin", "accountcolor", "-", "-", "info", "-", "-", "-", "lb", "-", "botatoes cash $ €", "delete clear", "number randomnumber", "-", "-", "rockpaperscissors", "-", "-", "guild"],
-          permission: ["-", "BAN_MEMBERS", "-", "-", "-", "-", "-", "-", "-", "-", "-", "KICK_MEMBERS", "-", "-", "-", "MANAGE_MESSAGES", "-", "-", "-", "-", "-", "-", "-"],
-          use: [""]
-        };
-
-        var comm = document.getElementById("commands");
-        for(i=0; i < commands.commands.length; i++) {
-          comm.insertAdjacentHTML('beforeend', "<div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='com"+(i+1)+"' onclick='clicked(this.id)' style='cursor:pointer;'><a>"+commands.commands[i]+"</a> "+commands.parameters[i].replace(/</g, "&lt").replace(/>/g, "&gt")+"<span class='w3-right'>"+commands.permission[i]+"</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='com"+(i+1)+"n' style='display:none'><h3>Aliases:</h3>"+commands.aliases[i]+"<br><br></li></div>");
-        }
-      }
-    </script>
   </head>
 
   <body class="darktheme">
     <div class="w3-bar w3-black w3-display-container">
       <a href="" onclick="closecontent()"><img src="https://i.imgur.com/dE85GbS.png" class="w3-bar-item" style="width:110px;height:100px;"></a>
-      <div class="w3-bar-item w3-display-left brm-margin" onclick="closecontent()">
+      <div class="w3-bar-item w3-display-left brm-margin">
         <a class="font-lg w3-xxxlarge">Botato</a>
       </div>
       <div class="w3-bar-item w3-display-right w3-large"><b>
