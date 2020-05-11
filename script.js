@@ -27,32 +27,11 @@ function retheme() {
     }
 }
 
-function logged() {
-    var lb = document.getElementById("logbutton");
-    lb.innerHTML = "{{ logged }}";
-}
-
-function clicked(clickid) {
-    var x = document.getElementById(clickid+"n");
+function clicked(clickedID) {
+    var x = document.getElementById(clickedID+"drop");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
-        x.style.display = "none";
-    }
-}
-
-function showcontent() {
-    var x = document.getElementById("dropcont");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function closecontent() {
-    var x = document.getElementById("dropcont");
-    if (x.style.display === "block") {
         x.style.display = "none";
     }
 }

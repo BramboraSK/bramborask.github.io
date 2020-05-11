@@ -28,17 +28,10 @@
           comm.insertAdjacentHTML('beforeend', "<div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='com"+(i+1)+"' onclick='clicked(this.id)' style='cursor:pointer;'><a>"+commands.commands[i]+"</a> "+commands.parameters[i].replace(/</g, "&lt").replace(/>/g, "&gt")+"<span class='w3-right'>"+commands.permission[i]+"</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='com"+(i+1)+"n' style='display:none'><h3>Aliases:</h3>"+commands.aliases[i]+"<br><br></li></div>");
         }
       }
-      var images = [];
-      function preload() {
-        for (var i = 0; i < arguments.length; i++) {
-          images[i] = new Image();
-          images[i].src = preload.arguments[i];
-        }
-      }
     </script>
   </head>
 
-  <body class="darktheme" onload="load();preload('./sun.png')">
+  <body class="darktheme">
     <div class="w3-bar w3-black w3-display-container">
       <a href="" onclick="closecontent()"><img src="https://i.imgur.com/dE85GbS.png" class="w3-bar-item" style="width:110px;height:100px;"></a>
       <div class="w3-bar-item w3-display-left brm-margin" onclick="closecontent()">
@@ -52,9 +45,7 @@
       </b></div>
     </div>
 
-    <div class="brm-margin w3-display-container" style="margin-top:30px;margin-bottom:10px;" onclick="closecontent()">
-	  <h2>This BOT is verified!</h2>
-	  <image src="./verified.png"/>
+    <div class="brm-margin w3-display-container" style="margin-top:30px;margin-bottom:10px;">
       <h2><b>Help</b></h2>
       <p>If you're confused from commands or you just need some help, ask about it on our Discord server!</p>
       <h3><b>Explanations</b></h3>
@@ -62,16 +53,51 @@
       <p>[text] = Optional</p>
       <p>Don't write these characters while using commands!</p>
       <p>Economy account will be created after one economy related command!</p>
-	  <h3><b>Creator</b></h3>
-	  <p>BramboraSK#5968</p>
+      <h3><b>Creator</b></h3>
+      <p>BramboraSK#5968</p>
       <h3><b>Prefix</b></h3>
       <p>At the moment, we use <b>b!</b> as a prefix.</p>
+      <p>(This BOT is verified)</p>
+      <p style="color:red">Aliases and descriptions aren't currently on the website due to rework!</p>
       <input type="text" id="commandSearch" class="w3-input w3-border w3-round-xlarge" style="width:15%" onkeyup="search();" placeholder="Find...">
     </div>
-    <ul class="w3-ul brm-margin w3-border w3-border-black noselect" onclick="closecontent()">
+    <ul class="w3-ul brm-margin w3-border w3-border-black noselect">
       <li><h3><b>Command<span class="w3-right">Needed Permission</span></b></h3></li>
     </ul>
-    <ul class="w3-ul w3-card-4 brm-margin noselect" id="commands" onclick="closecontent()"></ul>
+    <ul class="w3-ul w3-card-4 brm-margin noselect" id="commands">
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='8ball' onclick='clicked(this.id)' style='cursor:pointer;'><a>8ball</a> &ltquestion&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='8balldrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='ban' onclick='clicked(this.id)' style='cursor:pointer;'><a>ban</a> &lt@User&gt [reason]<span class='w3-right'>BAN_MEMBERS</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='bandrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='calculate' onclick='clicked(this.id)' style='cursor:pointer;'><a>calculate</a> &ltproblem&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='calculatedrop' style='display:none'><h3>Aliases:</h3>cal calc<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='chests' onclick='clicked(this.id)' style='cursor:pointer;'><a>chests</a> [list/open/help]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='chestsdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='coinflip' onclick='clicked(this.id)' style='cursor:pointer;'><a>coinflip</a> &ltbotatoes&gt &ltheads/tails&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='coinflipdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='color' onclick='clicked(this.id)' style='cursor:pointer;'><a>color</a> &ltcolor&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='colordrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='daily' onclick='clicked(this.id)' style='cursor:pointer;'><a>daily</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='dailydrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='deleted' onclick='clicked(this.id)' style='cursor:pointer;'><a>deleted</a> [all]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='deleteddrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='edited' onclick='clicked(this.id)' style='cursor:pointer;'><a>edited</a> [all]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='editeddrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='help' onclick='clicked(this.id)' style='cursor:pointer;'><a>help</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='helpdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='hentai' onclick='clicked(this.id)' style='cursor:pointer;'><a>hentai</a> [tags]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='hentaidrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='hourly' onclick='clicked(this.id)' style='cursor:pointer;'><a>hourly</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='hourlydrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='kick' onclick='clicked(this.id)' style='cursor:pointer;'><a>kick</a> &lt@User&gt [reason]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='kickdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='leaderboard' onclick='clicked(this.id)' style='cursor:pointer;'><a>leaderboard</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='leaderboarddrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='log' onclick='clicked(this.id)' style='cursor:pointer;'><a>log</a> &lt#Channel&gt<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='logdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='love' onclick='clicked(this.id)' style='cursor:pointer;'><a>love</a> &ltname/thing&gt and &ltname/thing&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='lovedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='money' onclick='clicked(this.id)' style='cursor:pointer;'><a>money</a> [@User]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='moneydrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='mute' onclick='clicked(this.id)' style='cursor:pointer;'><a>mute</a> &lt@User&gt [reason]<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='mutedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='ping' onclick='clicked(this.id)' style='cursor:pointer;'><a>ping</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='pingdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='purge' onclick='clicked(this.id)' style='cursor:pointer;'><a>purge</a> &ltamount_of_messages&gt [@FromSpecificUser]<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='purgedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='rng' onclick='clicked(this.id)' style='cursor:pointer;'><a>rng</a> [min] [max]<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='rngdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='rob' onclick='clicked(this.id)' style='cursor:pointer;'><a>rob</a> &lt@User&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='robdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='roulette' onclick='clicked(this.id)' style='cursor:pointer;'><a>roulette</a> &ltbotatoes&gt &ltred/black/green&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='roulettedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='rps' onclick='clicked(this.id)' style='cursor:pointer;'><a>rps</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='rpsdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='say' onclick='clicked(this.id)' style='cursor:pointer;'><a>say</a> &ltmessage&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='saydrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='send' onclick='clicked(this.id)' style='cursor:pointer;'><a>send</a> &ltbotatoes&gt &lt@User&gt<span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='senddrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='server' onclick='clicked(this.id)' style='cursor:pointer;'><a>server</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='serverdrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='slowmode' onclick='clicked(this.id)' style='cursor:pointer;'><a>slowmode</a> &ltduration&gt<span class='w3-right'>MANAGE_CHANNELS</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='slowmodedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='tempmute' onclick='clicked(this.id)' style='cursor:pointer;'><a>tempmute</a> &lt@User&gt &ltduration&gt [reason]<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='tempmutedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='unmute' onclick='clicked(this.id)' style='cursor:pointer;'><a>unmute</a> &lt@User&gt [reason]<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='unmutedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='vote' onclick='clicked(this.id)' style='cursor:pointer;'><a>vote</a><span class='w3-right'>-</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='votedrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+      <div><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='warn' onclick='clicked(this.id)' style='cursor:pointer;'><a>warn</a> &lt@User&gt [reason]<span class='w3-right'>MANAGE_MESSAGES</span></li><li class='w3-border-bottom w3-border-left w3-border-right w3-border-black' id='warndrop' style='display:none'><h3>Aliases:</h3>-<br><br></li></div>
+    </ul>
     <br>
     <div class="w3-center stred">
       <a href="https://top.gg/bot/508308744040480768">
